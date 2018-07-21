@@ -10,17 +10,17 @@ import { ProgressComponent } from './pages/progress/progress.component';
 
 
 const APP_ROUTES: Routes = [
-    {
-        path: '',
-        component: PagesComponent,
-        children: [
-            {path: 'home', component: HomeComponent},
-            {path: 'progres', component: ProgressComponent},
-            {path: 'graficas1', component: Graficas1Component},
-            {path: '', redirectTo: '/home', pathMatch: 'full' },
+    // {
+    //     path: '',
+    //     component: PagesComponent,
+    //     children: [
+    //         {path: 'home', component: HomeComponent},
+    //         {path: 'progres', component: ProgressComponent},
+    //         {path: 'graficas1', component: Graficas1Component},
+    //         {path: '', redirectTo: '/home', pathMatch: 'full' },
 
-        ]
-    },
+    //     ]
+    // },
     {path: 'login', component: LoginComponent },
     {path: 'register', component: RegisterComponent },
     {path: '**', component: PaginaErrorComponent }
